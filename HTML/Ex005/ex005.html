@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Formulário</title>
-</head>
-<body>
-    <div>
-        <h1>Cadastro dos Aspirantes</h1>
-        <p>Complete as informações</p>
-    </div>
+    <head>
 
-    <form>
-        <fieldset>
-            <div>
-                <label for="nome"><strong>Nome </strong> <abbr title="required">*</abbr></label>
-                <input type="text" name="nome" required/> <br/>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulário</title>
+
+    </head>
+
+    <body>
+        <div>
+
+            <h1>Cadastro dos Aspirantes</h1>
+            <p>Complete as informações</p>
+
+        </div>
+        <form>
+            <fieldset>
+                <div> 
+
+                    <label for="nome"><strong>Nome </strong> <abbr title="required">*</abbr></label>
+                    <input type="text" name="nome" required/> <br/>
                 
-                <label for="sobrenome"><strong>Sobrenome </strong><abbr title="required">*</abbr></label>
-                <input type="text" name="sobrenome" required/><br/>
+                    <label for="sobrenome"><strong>Sobrenome </strong><abbr title="required">*</abbr></label>
+                    <input type="text" name="sobrenome" required/><br/>
 
-                <label for="email"><strong>Email</strong><abbr title="required">*</abbr></label>
-                <input type="email" name="email" id="email" required>
-            </div>
+                    <label for="email"><strong>Email</strong><abbr title="required">*</abbr></label>
+                    <input type="email" name="email" id="email" required/>
 
-            <div>
-                <label for="senha"><strong>Senha</strong><abbr title="requerid">*</abbr></label>
-                <input type="password" name="senha" required> <br/>
-                <label for="senha"><strong>Repita a Senha</strong><abbr title="requerid">*</abbr></label>
-                <input type="password" name="senha" required> <br/>
-                <label for="date" ><strong>Data de nascimento</strong><abbr title="requerid">*</abbr></label>
-                <input type="date" name="nascimento" required><br/>
-            </div>
-        </fieldset>
+                </div>
 
-        <fieldset>
-            <div>
-                <label><br/><strong>Qual seu nível de ansiedade?</strong></label> <br/>
-                <input type="range"min="0" max="100" value="50" name="ansiendade"> <br/>
+                <div>
 
-                <label><strong>Quer participar do inglês ?</strong></label> <br/>
-                <label><input type="radio" name="english" value="yes" >Sim</label>
-                <label><input type="radio" name="english" value="no" >Não</label> <br/>
+                    <label for="senha"><strong>Senha</strong><abbr title="requerid">*</abbr></label>
+                    <input type="password" name="senha" required/><br/>
+                    <label for="senha"><strong>Repita a Senha</strong><abbr title="requerid">*</abbr></label>
+                    <input type="password" name="senha" required/> <br/>
+                    <label for="date"><strong>Data de nascimento</strong><abbr title="requerid">*</abbr></label> <br/>
+                    <input type="date" name="nascimento" required/><br/>
 
-                <label><strong>Quais são suas habilidade ?</strong></label> <br/>
-                <label><input type="checkbox" name="skill"  >HTML5</label>
-                <label><input type="checkbox" name="skill"  >CSS3</label>
-                <label><input type="checkbox" name="skill"  >Javascript</label>
-                <label><input type="checkbox" name="skill"  >Java</label>
+                </div>
+            </fieldset>
 
-            </div>
-        </fieldset>
-        <label> <input type="reset"></label>
-        <label ><input type="submit"></label>
+            <fieldset>
+                <div> 
 
-    </form>
-    
-</body>
+                    <label><br/><strong>Qual seu nível de ansiedade?</strong></label> <br/>
+                    <input type="range"min="0" max="100" value="50" name="ansiendade"/> <br/>
+
+                    <label><strong>Quer participar do inglês?</strong></label> <br/>
+                    <label><input type="radio" name="english" value="yes" />Sim</label>
+                    <label><input type="radio" name="english" value="no" checked />Não</label> <br/>
+
+                    <label><strong>Quais são suas habilidade?</strong></label> <br/>
+                    <label><input type="checkbox" name="skill"/>HTML5</label>
+                    <label><input type="checkbox" name="skill"/>CSS3</label>
+                    <label><input type="checkbox" name="skill">Javascript</label>
+                    <label><input type="checkbox" name="skill"/>Java</label>
+
+                </div>
+            </fieldset>
+
+            <label> <input type="reset"/></label>
+            <label ><input type="submit"/></label>
+
+        </form>
+        <input type="hidden" name="id" value="73">
+    </body>
+
 </html>
