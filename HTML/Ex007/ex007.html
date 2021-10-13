@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Áudio e Vídeo</title>
+    </head>
+    <body>
+
+        <h1>Reproduzindo Áudio e Vídeo</h1>
+        <p>Som e vídeo.</p>
+        <audio src="chuva.mpeg" preload="metadata" autoplay controls></audio> <br/>
+        <video src="agua.mp4" width="500" muted controls autoplay loop></video>
+        
+        <form>
+            <fieldset style="width:30em">
+                <legend><strong>Preferência</strong></legend>
+                <div>
+                    <label>Qual você gostou mais?</label><br/>
+                    <label><input type="radio" name="preferencia" value="audio" checked>Áudio</label>
+                    <label><input type="radio" name="preferencia" value="video">Vídeo</label>
+                    <label><br/>O quanto te deixou calmo?</label> <br/>
+                    <label><input type="range" min="0" max="100" value="50"></label>
+                </div>
+            </fieldset>
+            <fieldset style="width: 30em;">
+                <legend><strong>Comentário</strong></legend>
+                <div>
+                    <label>Conte o que você achou?</label> <br/>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" style="width: 26em;" spellcheck="default"></textarea>
+                </div>
+            </fieldset>
+            <label><input type="submit"></label>
+        </form>
+    </body>
+</html>
