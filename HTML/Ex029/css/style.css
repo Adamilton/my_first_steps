@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    border:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg,rgba(0, 128, 100,0.35),rgba(0, 128, 64,0.3),rgba(47, 128, 0,0.25),rgba(94, 128, 0,0.25));
+    background-repeat: no-repeat;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article{
+    padding: 2em;
+    width: 70vh;
+    height: 180vh;
+    border: solid 1em hsla(120, 50%, 25%,0.8);
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    padding: 0 0 1.2em 0;
+    color: hsl(120, 60%, 20%);
+    font-size: 2em;
+    font-family: 'Oxanium',Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-weight: 900;
+    text-align: justify;
+    text-indent: 3em;
+    font-size: 1.3em;
+    font-family: 'Arima Madurai',Georgia, 'Times New Roman', Times, serif;
+    color: #0b410b;
+}
+#conclusao{
+    color: rgb(57, 0, 97);
+  
+}
+#introducao{
+    color: initial;
+}
+#dev1{
+    color: green;
+}
+#dev2{
+    color: #004b00;
+    opacity: 0.5;
+}
