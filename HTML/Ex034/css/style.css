@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'futura';
+    src: url(fonts/FuturaLT-Book.woff), url(fonts/FuturaLT-Light.woff);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   
+    font-size: 62.5%;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+
+.cabecalha>* {
+    display: flex;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+p, h3, h2, h1,  ul {
+    
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, rgba(221, 31, 82, 1), rgba(241, 30, 174, 1), rgba(168, 30, 212, 1));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+
