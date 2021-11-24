@@ -1,0 +1,136 @@
+@font-face {
+    font-family:'pacifica' ;
+    src: url(fonts/pacificacondensedregular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+    font-family:'pacifica' ;
+    font-size: 62.5%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: rgb(158, 179, 197);
+    color: rgba(58, 61, 66, 1);
+}
+
+#root {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 150px;
+    flex-direction:  row;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px ;
+    background-color: rgb(158, 179, 197);
+    position: fixed;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    
+}
+
+a {
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgba(58, 61, 66, 1);
+}
+
+main {
+    width: 100vw;
+    padding-top: 20px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(90deg,rgba(128, 128, 128, 0.5),rgb(177, 184, 192),rgb(158, 179, 197)); 
+}
+
+img {
+    display: flex;
+}
+
+.loboleft {
+    margin-right: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+p {
+    font-size: 1.0rem;
+    font-family: cursive;
+    text-indent: 3rem;
+    text-align: justify;
+    width: 600px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.box {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    background:linear-gradient(90deg,rgb(158, 179, 197),rgb(177, 184, 192),rgba(128, 128, 128, 0.5)); 
+}
+
+.two {
+    background:linear-gradient(90deg,rgba(128, 128, 128, 0.5),rgb(177, 184, 192),rgb(158, 179, 197)); 
+}
+
+.left {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.loboright {
+    margin: 0;
+    margin-left: 20px;
+}
+
+footer {
+    padding-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 0.8rem;
+    background-color: rgba(128, 128, 128, 0.473);
+    
+}
