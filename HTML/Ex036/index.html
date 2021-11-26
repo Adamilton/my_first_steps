@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pesquisa de Satisfação</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+        <div id="root">
+
+            <img id="logo" src="logo.svg" alt="">
+           
+            <form  id="pesquisa" method="get" action="#">
+                <label class="experiencia" for="">Dê uma avaliação para nosso aplicativo:</label>
+                <div class="pergunta">
+                    <label class="estrela" for="stark_0"><img src="estrelaColor.svg"  alt="" onmouseenter="entrar(0)"  /></label>
+                    <input type="button" id="stark_0" class="ask"   value="muito ruim" >
+
+                    <label class="estrela" for="stark_1"><img src="estrelaOpacity0.svg" alt=""  onmouseenter="entrar(1)" onclick="clicar(1)" /></label>
+                    <input type="button" id="stark_1" class="ask"  value="ruim">
+                    
+
+                    <label class="estrela" for="stark_2"><img src="estrelaOpacity0.svg" alt="" onmouseenter="entrar(2)"  onclick="clicar(2)"/></label>
+                    <input type="button" id="stark_2" class="ask"  value="indiferente" />
+
+                    <label class="estrela" for="stark_3"><img src="estrelaOpacity0.svg" alt="" onmouseenter="entrar(3)"  onclick="clicar(3)" /></label>
+                    <input type="button" id="stark_3" class="ask"   value="bom"/>
+                    
+                    <label class="estrela" for="stark_4"><img src="estrelaOpacity0.svg" alt="" onmouseenter="entrar(4)"  onclick="clicar(4)" /></label>
+                    <input  type="" id="stark_4" class="ask"   value="muito bom"/>
+                </div>
+
+                
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deixa aqui seu Comentário"></textarea>
+                <input class="btn" type="button" value="Enviar" onclick="addcommit()" >
+               
+                
+            </form>
+
+            <div id="respostas">
+               
+
+            </div>
+
+                       
+        </div>
+
+    </body>
+    <script src="js/script.js"></script>
+</html>
