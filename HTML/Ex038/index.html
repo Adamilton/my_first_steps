@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hamburgueria</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="root">
+
+        </div>
+        <header>
+            <h1>Hamburgueria Comeu morreu</h1>
+        </header>
+
+        <div id="content">
+
+            <aside>
+                <form action="#" method="get" id="conteiner-pao">
+                    <fieldset id="box-opcao">
+                        <legend>Opção de Pão</legend>
+                        <label>Pão  francês:_______R$3,00 <input type="radio" id="pao-frances" name="pao" checked/></label>
+                        <label>Pão Australiano:___ R$8,00 <input type="radio"  id="pao-autraliano" name="pao" /></label>
+                        <label>Pão de Brioche:____R$6,00 <input type="radio" id="pao-brioche" name="pao" /></label>               
+                    </fieldset>
+                    <fieldset id="box-opcao">
+                        <legend>Opções de Hambúrguer</legend>
+                        <label>Picanha:_________R$13,00 <input type="radio"  id="picanha" name="hamburguer" /></label>
+                        <label>Costela:_________ R$10,00 <input type="radio" id="costela" name="hamburguer" /></label>
+                        <label>Vegano:_________ R$12,00 <input type="radio" id="vegano" name="hamburguer" /></label>          
+                    </fieldset>
+                    <fieldset id="box-opcao">
+                        <legend>Opções de Salada</legend>
+                        <label>Alface: __________ R$1,50 <input type="radio" id="alface" name="salada" /></label>
+                        <label>Tomate: __________R$1,50 <input type="radio" id="tomate" name="salada" /></label>
+                        <label>Sem salada:_______ R$0,00 <input type="radio"  id="sSalada" name="salada" /></label>               
+                    </fieldset>
+                    <fieldset id="box-opcao">
+                        <legend>Opções de Queijo</legend>
+                        <label>Mussarela:_______ R$3,00 <input type="radio"  id="mussarela" name="queijo" /></label>
+                        <label>Prato:___________ R$3,00 <input type="radio"  id="prato" name="queijo" /></label>
+                        <label>Cheddar:_________R$5,00 <input type="radio" id="cheddar" name="queijo" /></label>               
+                    </fieldset>
+                    <div id="box-btn">
+                        <input id="finalizar" type="button" value="Fazer Pedido"  onclick="pedido()">
+                        <input id="limapar" type="reset" value="Limpar Campos" onclick="limpar()">
+                    </div>
+                    
+                </form>
+
+            </aside>
+            
+
+            <div id="calculo" class>
+
+
+            </div>
+            
+
+        </div>
+
+
+        <script src="js/script.js"></script>
+
+        
+    </body>
+</html>
