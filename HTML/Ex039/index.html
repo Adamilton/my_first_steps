@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frases do Bart</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Frases do Bart no Quadro Negro</h1>
+        </header>
+        <form id="box-principal" action="#" method="get">
+            <fieldset id="entrada">
+                <label for="frase-criada">
+                    <input class="entrada-campo" id="frase-criada" type="text" placeholder="Digite a Frase para o Bart Escrever" />
+                </label>
+                
+                <label for="qtd-frase">
+                    <input class="entrada-campo" id="qtd-frase" type="number" placeholder="Digite a quantidade">
+                </label>
+            </fieldset>
+            <fieldset id="box-btn">
+               
+                <input class="btn-entrada" type="button" value="Visualizar" onclick="vizualizar()">
+                <input class="btn-entrada" type="button" value="Frase Aleatório" onclick="aleatora()">
+                <input class="btn-entrada" type="button" value="Confirmar" onclick="Escrever()">
+                <input class="btn-entrada" type="reset" value="Limpar" onclick="Limpar()">
+               
+            </fieldset>
+
+            <div id="boxDisplay">
+                <div id="quadro">
+                   
+                </div>
+
+            </div>
+
+            <div id="dados">
+
+            </div>
+
+        
+        </form>
+        
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>

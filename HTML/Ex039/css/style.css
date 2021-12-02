@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Caveat',sans-serif;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+#box-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    font-size: 2.3rem;
+    margin: 30px 0px 30px 0px;
+}
+
+#entrada {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 831px;
+    border:none;
+}
+
+#frase-criada {  
+    display: flex; 
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+
+.entrada-campo {
+    font-size: 1.2rem;
+    font-family: 'Caveat',sans-serif;
+}
+
+#frase-criada:hover {
+    font-size: 1.6rem ;
+    height: 30px;
+    margin-bottom: 4px;
+}
+
+
+#qtd-frase {
+    display: flex;
+    width: 150px;
+    font-family: 'Caveat',sans-serif;
+}
+#qtd-frase:hover {
+    font-size: 1.6rem ;
+    height: 30px;
+    margin-bottom: 4px;
+}
+
+#box-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border:none ;
+
+}
+
+.btn-entrada {
+    font-size: 1.6rem;
+    padding: 5px 25px;
+    margin: 10px 60px;
+    font-family: 'Caveat',sans-serif;
+}
+
+.btn-entrada:hover {
+    font-size: 1.8rem;
+    margin: 5px 60px;
+}
+
+#boxDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 1023px;
+    height: 730px;   
+    background-image: url(imagens/quadro.png);
+    background-size: auto;
+    text-indent: 2rem;
+}
+#quadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 923px;
+    padding:20px 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+#dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
