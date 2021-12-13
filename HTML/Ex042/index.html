@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jogo da Velha</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                <h1>Jogo da velha</h1>
+            </header>
+            <main id="wallpeper">
+                
+                <form action="#" method="get" >
+                    <fieldset id="container" >
+                        <input type="button" class="box linha0 coluna0" onclick="move(0,0)" />
+                        <input type="button" class="box linha0 coluna1" onclick="move(0,1)" />
+                        <input type="button" class="box linha0 coluna2" onclick="move(0,2)" />
+                        <input type="button" class="box linha1 coluna0" onclick="move(1,0)" />
+                        <input type="button" class="box linha1 coluna1" onclick="move(1,1)" />
+                        <input type="button" class="box linha1 coluna2" onclick="move(1,2)" />
+                        <input type="button" class="box linha2 coluna0" onclick="move(2,0)" />
+                        <input type="button" class="box linha2 coluna1" onclick="move(2,1)" />
+                        <input type="button" class="box linha2 coluna2" onclick="move(2,2)" />
+
+                    </fieldset>
+                    
+                </form>
+
+                <div id="display" >
+                    <h2 id="win"></h2>
+                </div>
+
+
+            </main>
+              
+        
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+     
+</html>
