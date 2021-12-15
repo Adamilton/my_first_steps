@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Corrida</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="root">
+            <header><h1>Corrida Maluca</h1></header>
+            <input class="btn" type="button" value="Sortear os Carros" onclick="addcar()">
+            <div id="info">
+                <div class="Edna">
+                    <h2>EDINA</h2>
+                    <ul>
+                        <li><strong>Velocidade Mínima: </strong><span id="veloMinEdina">180</span> Km/h</li>
+                        <li><strong>Velocidade Máxima: </strong><span id="veloMaxEdina">220</span> Km/h</li>
+                        <li><strong>Derrapagem: </strong> <span id="DerrEdina">1</span>%</li> 
+                    </ul>
+                </div>
+                <div class="Juca">
+                    <h2>JUCA</h2>
+                    <ul>
+                        <li><strong>Velocidade Mínima: </strong><span id="veloMinJuca">120</span> Km/h</li>
+                        <li><strong>Velocidade Máxima: </strong><span id="veloMaxJuca">260</span> Km/h</li>
+                        <li><strong>Derrapagem: </strong> <span id="DerrJuca">5</span>%</li>
+                    </ul>
+                    
+                    
+                </div>
+                <div class="Pedro">
+                    <h2>PEDRO</h2>
+                    <ul>
+                        <li><strong>Velocidade Mínima: </strong><span id="veloMinPedro">150</span> Km/h</li>
+                        <li><strong>Velocidade Máxima: </strong><span id="veloMaxPedro">230</span> Km/h</li>
+                        <li><strong>Derrapagem: </strong> <span id="DerrPedro">3</span>%</li>
+                    </ul>
+                    
+                </div>    
+    
+            </div>
+
+            <h2>Modos de corrida</h2>
+            <ol>
+                <li>Corrida rápida (10 voltas),</li>
+                <li>Grande Prêmio (70 voltas)</li>
+                <li>Enduro (160 voltas).</li>
+                <li>Inserir o número de volta</li>
+            </ol>
+
+            <form action="#" method="get">
+                <input class="btn" type="button" value="Corrida Rápida" onclick="race(10)">
+                <input class="btn" type="button" value="Grande Prêmio" onclick="race(70)">
+                <input class="btn" type="button" value="Enduro" onclick="race(160)">
+                <label for="escolha"></label>
+                <input  type="number" id="escolha">
+                <input class="btn" type="button" value="opção" onclick="optionUser()">
+            </form>
+
+            <div id="statusCar">
+                <div class="Edna">
+                    <h2>EDINA</h2>
+                    <img src="imagens/topgearcarwhite.png" alt="">
+                    <p id="ed"></p>
+                    
+                </div>
+                <div class="Juca">
+                    <h2>JUCA</h2>
+                    <img src="imagens/topgearcarpurple.png" alt="">
+                    <p id="ju"></p>
+                    
+                </div>
+                <div class="Pedro">
+                    <h2>PEDRO</h2>
+                    <img src="imagens/topgearcarblue.png" alt="">
+                    <p id="pe"></p>                   
+                </div>
+                
+            </div>
+            <div id="vencedor">
+                <h4 id="mostrar"></h4>
+
+            </div>
+            
+        </div>
+        
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
