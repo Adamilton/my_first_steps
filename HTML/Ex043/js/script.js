@@ -1,28 +1,23 @@
-let edina = {
-}
-
-let juca = {
-}
-
-let pedro = {
-}
+let edina = {};
+let juca = {};
+let pedro = {};
 
 function addcar() {
-    edina.car = carDraw()
-    juca.car = carDraw()
-    pedro.car = carDraw()
-    gerarCars()
-    fillCar()
+    edina.car = carDraw();
+    juca.car = carDraw();
+    pedro.car = carDraw();
+    gerarCars();
+    fillCar();
     return true
 }
 
 function speed(min, max) {
-    return parseFloat(Math.random() * (max - min) + min).toFixed(2)
+    return parseFloat(Math.random() * (max - min) + min).toFixed(2);
 }
 
 function carDraw() {
     let typeofCar;
-    let luck = Math.random() * 100
+    let luck = Math.random() * 100;
     if (luck <= 60) {
         typeofCar = "Popular";
     } else if (luck <= 95) {
@@ -34,7 +29,7 @@ function carDraw() {
 }
 
 function minVelocity(car) {
-    let velocity
+    let velocity;
     if (car === "Popular") {
         velocity = speed(110, 130);
     } else if (car === "Sport") {
@@ -46,7 +41,7 @@ function minVelocity(car) {
 }
 
 function maxVelocity(car) {
-    let velocity
+    let velocity;
     if (car === "Popular") {
         velocity = speed(180, 200);
     } else if (car === "Sport") {
@@ -58,7 +53,7 @@ function maxVelocity(car) {
 }
 
 function carSkid(car) {
-    let sideslip
+    let sideslip;
     if (car === "Popular") {
         sideslip = speed(3, 4);
     } else if (car === "Sport") {
@@ -67,6 +62,26 @@ function carSkid(car) {
         sideslip = speed(1, 1.175);
     }
     return sideslip;
+}
+
+function gerarCars() {
+
+    edina.minSpeed = minVelocity(edina.car),
+    edina.maxSpeed = maxVelocity(edina.car),
+    edina.skid = carSkid(edina.car);
+    edina.winCount = 0;
+
+    juca.minSpeed = minVelocity(juca.car),
+    juca.maxSpeed = maxVelocity(juca.car),
+    juca.skid = carSkid(juca.car);
+    juca.winCount = 0;
+
+    pedro.minSpeed = minVelocity(pedro.car),
+    pedro.maxSpeed = maxVelocity(pedro.car),
+    pedro.skid = carSkid(pedro.car);
+    pedro.winCount = 0;
+
+    return true
 }
 
 function finalSpeed(min, max, skid) {
@@ -99,26 +114,6 @@ function fillCar() {
     pedroVSkid.innerHTML = pedro.skid;
 }
 
-function gerarCars() {
-
-    edina.minSpeed = minVelocity(edina.car),
-    edina.maxSpeed = maxVelocity(edina.car),
-    edina.skid = carSkid(edina.car);
-    edina.winCount = 0;
-
-    juca.minSpeed = minVelocity(juca.car),
-    juca.maxSpeed = maxVelocity(juca.car),
-    juca.skid = carSkid(juca.car);
-    juca.winCount = 0;
-
-    pedro.minSpeed = minVelocity(pedro.car),
-    pedro.maxSpeed = maxVelocity(pedro.car),
-    pedro.skid = carSkid(pedro.car);
-    pedro.winCount = 0;
-
-    return true
-}
-
 function lapWinner(player1, player2, player3) {
 
     if (player1 > player2 && player1 > player3) {
@@ -135,6 +130,7 @@ function lapWinner(player1, player2, player3) {
 
 function winName(count1, count2, count3) {
     let nameWin;
+    
     if (count1 > count2 && count1 > count3) {
         nameWin = 'Edina';
     }
@@ -143,6 +139,9 @@ function winName(count1, count2, count3) {
     }
     else if (count3 > count2) {
         nameWin = 'Pedro';
+    }
+    else if (count1 == count2 || count1 == count3 || count2 == count3) {
+        nameWin = "Empate"
     }
     
     return nameWin
@@ -160,11 +159,11 @@ function race(n) {
         pedro.finalSpeed = finalSpeed(Number(pedro.minSpeed), pedro.maxSpeed, pedro.skid);
 
         lapWinner(edina.finalSpeed, juca.finalSpeed, pedro.finalSpeed);
-
     }
     name = winName(edina.winCount, juca.winCount, pedro.winCount)
     console.log(name)
     showWin(edina.winCount, juca.winCount, pedro.winCount, name)
+
     return true
 }
 
@@ -177,20 +176,29 @@ function showWin(count1, count2, count3, name) {
     showEd.innerHTML = `A Edina ganhou ${count1} voltas`
     showJu.innerHTML = `O Juca ganhou ${count2} voltas`
     showPe.innerHTML = `O Pedro ganhou ${count3} voltas`
-    show.innerHTML = `Portanto, ${name} ganhou o troféu da competição`
+
+    if (name != "Empate") {
+        show.innerHTML = `Portanto, ${name} ganhou o troféu da competição`
+    } else {
+        show.innerHTML = `Portanto, ${name}`
+    }
     clear()
+
+    return true
 }
 
 function optionUser() {
     let tchoice = document.querySelector('#escolha');
     let choice = Number(tchoice.value)
 
-    race(choice)
+    return race(choice)
 }
 
 function clear() {
     pedro.winCount = 0;
     juca.winCount = 0;
     edina.winCount = 0;
+
+    return true
 }
 
