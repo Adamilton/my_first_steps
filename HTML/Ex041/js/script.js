@@ -1,6 +1,5 @@
 let vet1 = [];
-let i;
-let j;
+
 
 let display1 = document.querySelector('#mostrar1');
 let display2 = document.querySelector('#mostrar2');
@@ -10,7 +9,7 @@ let array1 = document.querySelectorAll('#mostrar1 span');
 
 let tAddNumber = document.querySelector('#add')
 
-let menor;
+let maior;
 
 function adicionar() {
 
@@ -67,14 +66,14 @@ function Ordered() {
 }
 
 function arrayProcessOrdered() {
-    for (i = 0; i < vet1.length; i++) {
+    for (let i = 0; i < vet1.length; i++) {
 
-        for (j = 0; j < vet1.length; j++) {
+        for ( let j = i; j < vet1.length; j++) {
 
-            if (vet1[i] < vet1[j]) {
-                menor = vet1[i]
+            if (vet1[i] > vet1[j]) {
+                maior = vet1[i]
                 vet1[i] = vet1[j]
-                vet1[j] = menor
+                vet1[j] = maior
             }
         }
     }
