@@ -1,6 +1,21 @@
-let edina = {};
-let juca = {};
-let pedro = {};
+let edina = {
+    minSpeed: 180,
+    maxSpeed: 220, 
+    skid: 1,
+    winCount:0
+};
+let juca = {
+    minSpeed: 120,
+    maxSpeed: 260, 
+    skid: 5,
+    winCount:0
+};
+let pedro = {
+    minSpeed: 150,
+    maxSpeed: 230, 
+    skid: 3,
+    winCount:0
+};
 
 function addcar() {
     edina.car = carDraw();
@@ -134,13 +149,13 @@ function winName(count1, count2, count3) {
     if (count1 > count2 && count1 > count3) {
         nameWin = 'Edina';
     }
-    else if (count2 > count3) {
+    else if (count2 > count3 && count2 > count1) {
         nameWin = 'Juca';
     }
-    else if (count3 > count2) {
+    else if (count3 > count2 && count3 > count1) {
         nameWin = 'Pedro';
     }
-    else if (count1 == count2 || count1 == count3 || count2 == count3) {
+    else {
         nameWin = "Empate"
     }
     
