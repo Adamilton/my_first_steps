@@ -278,12 +278,11 @@ function testRangePrice(_initialPrice, _finalPrice, _price) {
 function numberMonth(_stringMonth) {
   const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
   let numberMonth;
-  months.forEach(function (value, i) {
+  months.forEach((value, i) => {
     if (value.toLowerCase() === _stringMonth.toLowerCase()) {
       numberMonth = i
       return
     }
-
   })
   return numberMonth
 }
@@ -320,7 +319,7 @@ function fullFilter() {
   const initialDate = document.getElementById('initialDate').value;
   const finalDate = document.getElementById('finalDate').value;
   const monthDate = document.getElementById('select').value;
-  const tabble = document.getElementById('dataFilter');
+  
 
   const filter = client.filter(function (value) {
     return testMonth(monthDate, value.dueDate) &&

@@ -13,60 +13,53 @@
             <header>
                 <h1 lang="en">Joan's Clothes</h1>
             </header>
-            <form action="#" method="get">
-                <h2>Pesquisar clientes</h2>
-                <!--             <fieldset>
-                    <legend>Cliente</legend> -->
+            <h2>Pesquisar clientes</h2>
+            <form action="#" method="get" id="searchData">
+                
                 <label for="name"></label>
-                <input class="inputClient" type="text" id="name" name="name" placeholder="Digite o nome do cliente" />
-                <label for="price"></label>
-                <input class="inputClient" type="number" id="minPrice" name="minPrice" placeholder="Preço mín. da compra" />
-                <label for="price"></label>
-                <input class="inputClient" type="number" id="maxPrice" name="maxPrice"
-                    placeholder="Preço máx. da compra" /><br>
-                <label for="date"></label>
-                <div id="dataInicio">
-                    <p>Data início</p>
-                    <input class="inputClient" type="date" id="initialDate" name="initialDate"
-                        placeholder="Data de Inicio" />
+                <input type="text" id="name" name="name" placeholder="Digite o nome do cliente" />
+
+                <div  class="inputData">
+
+                    <div>
+                        <h3>Preço da compra</h3>
+                        <input class="inputClient" type="text" id="minPrice" name="minPrice" placeholder="mín." />
+                        <input class="inputClient" type="text" id="maxPrice" name="maxPrice" placeholder="máx." />
+                    </div>                  
+                    
+                    <span>
+                        <h3 class="title">Data início</h3>
+                        <input class="inputClient" type="date" id="initialDate" name="initialDate" placeholder="Data de Inicio" />
+                    </span>
+                    <span>
+                        <h3 class="title">Data final</h3>
+                        <input class="inputClient" type="date" id="finalDate" name="finalDate" placeholder="Data de Fim" />
+                    </span>
+
+                    <span>
+                        <h3 class="title">Mês referência</h3>
+                        <select class="inputClient" id="select">
+                            <option value=""></option>
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Março">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+                        </select>
+                    </span>
+
                 </div>
-                <div id="dataFinal">
-                    <p>Data final</p>
-                    <input class="inputClient" type="date" id="finalDate" name="finalDate" placeholder="Data de Fim" />
-                </div>
-                <div id="mês">
-                    <p>Mês referência</p><br>
-                    <select id="select">
-                        <option value=""></option>
-                        <option value="Janeiro">Janeiro</option>
-                        <option value="Fevereiro">Fevereiro</option>
-                        <option value="Março">Março</option>
-                        <option value="Abril">Abril</option>
-                        <option value="Maio">Maio</option>
-                        <option value="Junho">Junho</option>
-                        <option value="Julho">Julho</option>
-                        <option value="Agosto">Agosto</option>
-                        <option value="Setembro">Setembro</option>
-                        <option value="Outubro">Outubro</option>
-                        <option value="Novembro">Novembro</option>
-                        <option value="Dezembro">Dezembro</option>
-                    </select>
-                </div>
-                <!--             </fieldset>
-    -->
-                <div>
-                    <input class="inputClient" type="button" id="btnPesq" value="Pesquisar" onclick="fullFilter()" />
-
-
-
-                    <!--                 <input class="inputClient" type="button" id="btn" value="Adicionar" onclick="addClient()" />
-
-                    <input class="inputClient" type="button" id="btn" value="Calcular Juros" onclick="calcClient()" />
-
-                    <input class="inputClient" type="button" id="btn" value="Agrupar por títulos" onclick="agrCliente()" />
-
-                    <input class="inputClient" type="button" id="btn" value="Agrupar por data" onclick="agrDate()" /> -->
-                </div>
+                
+                
+                <input class="inputClient" type="button" id="btn" value="Pesquisar" onclick="fullFilter()" />
+            
             </form>
 
             <table id="dados_cliente">
@@ -83,13 +76,9 @@
                 </tbody>
               
             </table>
+
+
         </div>
-
-
-        <div id="resultClients"></div>
-        <div id="filtrarData"></div>
-
-
     </body>
     <script src="js/main.js"></script>
 
