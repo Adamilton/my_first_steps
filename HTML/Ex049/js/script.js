@@ -12,6 +12,8 @@ let decrease = makeSizer(-10);
 
 document.getElementById('max').onclick = increase;
 document.getElementById('min').onclick = decrease; 
+
+//alternate code
  /* function zoom(){
     let size= 16;
 
