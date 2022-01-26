@@ -19,10 +19,25 @@ function createArray(_n){
     return arr
 }
 
-function recursive(_matrix){
-    
+const test = createrMatrix(5,2);
+console.log(test);
+console.log(`line: ${test.length}`);
+//console.log(`column: ${test[0].length}`)
 
+console.log(typeof test[0]);
+
+function recursive(_matrix){
+    const line = _matrix.length;
+    //const column = _matrix[0].length
+    if (typeof _matrix === "object"){
+        _matrix.forEach(element => {
+            return (recursive(element))
+        });
+    }else {
+        return console.log(_matrix)
+    }
+   
 }
 
-
+recursive(test)
 
